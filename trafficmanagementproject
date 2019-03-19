@@ -1,0 +1,935 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>VARIOUS SOCIAL ISSUES</title>
+
+<meta name="viewport" content="width:device-width initial-
+
+scale:1.0">
+
+<meta charset="UTF-8">
+
+<style>
+
+*{
+ box-sizing: border-box;
+}
+
+body{
+background-image:linear-gradient(gray,white);
+}
+
+
+.heading{
+border:5px;
+padding:7px;
+}
+
+h1{
+height:270px;
+display:inline;
+text-shadow: 2px 2px;
+}
+
+img{
+display:inline;
+}
+
+img:hover {
+box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a, .dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+  background-color: gray;
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+ 
+
+
+
+#div1 {
+  width: 100px;
+  height: 40px;
+  background: red;
+  -webkit-transition: width 2s; 
+  transition: width 2s;
+
+}
+
+#div1:hover {
+width:300px;
+text-color:yellow;
+}
+
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 18px;
+}
+
+.img1 { 
+  width: 100%;
+  height: auto;
+  opacity:0.7;
+  border-radius:50%;
+}
+
+.img1 hover {
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+
+h2 {
+height:65px;
+}
+
+.transition {
+  width: 250px;
+  height: 40px;
+  background-color: red;
+  position: relative;
+  -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+  -webkit-animation-delay: 2s; /* Safari 4.0 - 8.0 */
+  animation-name: example;
+  animation-duration: 4s;
+  animation-delay: 2s;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes example {
+  0%   {background-color:red; left:0px; top:0px;}
+  25%  {background-color:yellow; left:120px; top:0px;}
+  50%  {background-color:blue; left:120px; top:120px;}
+  75%  {background-color:green; left:0px; top:120px;}
+  100% {background-color:red; left:0px; top:0px;}
+}
+
+/* Standard syntax */
+@keyframes example {
+  0%   {background-color:red; left:0px; top:0px;}
+  25%  {background-color:yellow; left:120px; top:0px;}
+  50%  {background-color:blue; left:120px; top:120px;}
+  75%  {background-color:green; left:0px; top:120px;}
+  100% {background-color:red; left:0px; top:0px;}
+}
+
+.section2::after {
+display: table;
+content:' "";
+clear:both;
+}
+
+.container {
+  height:300px;
+  position: relative;
+  float:left;
+  width:65%;
+}
+
+
+
+.right {
+  float:left;
+  width:35%;
+  text-align:center;
+  height:300px;
+}
+
+
+.right a {
+  background-color:#e5e5e5;
+  padding:8px;
+  margin-top:7px;
+  display:block;
+  width:100%;
+  color:black;
+}
+
+@media (max-width:600px) {
+  .container, .right {
+    width:100%;
+  }
+}
+
+h3 {
+margin:4px;
+outline:6px;
+border-style:dashed;
+border-width:3px;
+border-color:green;
+padding:4px;
+color:red;
+}
+
+.m{
+border: 3px solid red;
+}
+
+.n{
+border: 3px solid red;
+}
+
+.section3::after
+{
+display:table;
+content:' "";
+clear:both;
+}
+.menu1 {
+  float:left;
+  width:20%;
+  text-align:center;
+}
+.menu1 a {
+  background-color:#e5e5e5;
+  padding:8px;
+  margin-top:7px;
+  display:block;
+  width:100%;
+  color:black;
+}
+.main {
+  float:left;
+  width:60%;
+  padding:0 20px;
+}
+.right1 {
+  background-color:#e5e5e5;
+  float:left;
+  width:20%;
+  padding:15px;
+  margin-top:7px;
+  text-align:center;
+}
+
+@media only screen and (max-width:620px) {
+  /* For mobile phones: */
+  .menu1, .main, .right1 {
+    width:100%;
+  }
+}
+
+
+
+.responsive::after {
+display:table;
+content:' "";
+/clear:both;
+}
+
+
+div.gallery {
+ border: 1px solid #ccc;
+ float:left;
+width:25%;
+
+ }
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: 300px;
+}
+
+
+@media ("max-width:620px") {
+ .responsive {
+   width:100%;
+}
+}
+
+
+
+
+
+
+
+ </style>
+
+</head>
+
+<body>
+
+<div class="heading">
+<center>
+<img src="https://media2.picsearch.com/is?
+
+0_vHttdRhZ19vuT81JdyVbHkjKO3EX0vlxSmzZXb_qQ&height=158" 
+
+height="105px" width="160px">
+<h1><b>Traffic Management</b></h1>
+</center>
+</div>
+
+<ul>
+  <li><a href="#home">About</a></li>
+  <li class="dropdown">
+    <a href="#" class="dropbtn">Traffic Issues</a>
+    <div class="dropdown-content">
+      <a href="file:///C:/Users/HP/Documents/accproject.html">Accident</a>
+      <a href="#">Four-wheelers</a>
+      <a href="#">Traffic-signals</a>
+      <a href="#">Road work</a>
+      <a href="#">Double parking</a>
+      <a href="#">Road narrowing</a>
+
+     </div>
+  </li>
+
+  
+  <li><a href="file:///C:/Users/vikas%20gupta/Documents/WEB
+
+%20DEVELOPMENT/biodata.html">Register</li>
+
+
+  <li><a href="file:///C:/Users/vikas
+
+%20gupta/Desktop/login.html">Login</li>
+
+
+  <li style="float:right"><a class="active" 
+
+href="file:///C:/Users/vikas
+
+%20gupta/Desktop/login.html">Admin</a></li>
+</ul>
+
+
+
+<div id="div1">TRAFFIC</div><br>
+
+
+<button onclick="getLocation()">Current Location</button>
+
+<p id="demo"></p>
+
+<script>
+var x = document.getElementById("demo");
+
+function getLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(showPosition);
+  } else { 
+    x.innerHTML = "Geolocation is not supported by this browser.";
+  }
+}
+
+function showPosition(position) {
+  x.innerHTML = "Latitude: " + position.coords.latitude + 
+  "<br>Longitude: " + position.coords.longitude;
+}
+</script>
+
+
+
+
+
+
+
+
+<div class="section2" style="overflow:auto"> 
+<div class="container">
+  
+  <div class="img1"><img src="https://encrypted-
+
+tbn0.gstatic.com/images?
+
+q=tbn:ANd9GcR_uXMv_b3KHxKPJjrWGGtzeBhNwf7FC5LabxzKQ0e4pF43Y6d4Hg" 
+
+alt="Cinque Terre" width="100%" height="300"></div>
+  <div class="center"><div class="transition"><h2><b>TRAFFIC 
+
+SYSTEM</b></h2></div></div>
+</div>
+
+<div class="right">
+<a href="#">Rules of the road</a>
+<a href="#">Traffic guards</a>
+<a href="#">Road traffic safety</a>
+<a href="#">Road traffic control device</a>
+<a href="#">Quality controls</a>
+
+</div>
+</div>
+
+
+<div class="section3" style="overflow:auto">
+  <div class="menu1">
+    <a href="#">INNOVATIVE IDEAS</a>
+    <a href="#">FEEDBACK</a>
+    <a href="#">CHANGES REQUIRED/a>
+    <a href="#">TRAFFIC HANDLING</a>
+  </div>
+
+  <div class="main">
+    <h2>TRAFFIC MANAGEMENT</h2>
+    <p>Traffic volumes, types of vehicles, driving styles, 
+
+population density, speed limits, and many other factors vary 
+
+dramatically from one region to the next. As a result, highway 
+
+traffic control measures (including type of equipment and 
+
+implementation), are not strictly consistent. Federal Guidelines do 
+
+not address certification methods for traffic controllers, flaggers, 
+
+or other personnel responsible for traffic control. 
+</p>
+  </div>
+
+  <div class="right1">
+    <h2>About</h2>
+    <p>Road traffic control involves directing vehicular and 
+
+pedestrian traffic around a construction zone, accident or other 
+
+road disruption, thus ensuring the safety of emergency response.
+
+</p>
+  </div>
+</div>
+
+
+
+
+<div class="responsive">
+
+<div class="gallery">
+
+    <img 
+
+src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxMS
+
+EhUTExMWFhUVFxgXFxgYFxgXFhYYGBUXFxcYGBUYHSggGBolHRUXITEiJSkrLi8uFx81
+
+ODMsNygtLisBCgoKDg0OGhAQGi0lICU3LS0rNzUtLSswKy0vLS0tLi0vLS0tLS8tLS8u
+
+LS0tLS0tLS0tLS0tLS0tLS0tLS0tLf/AABEIALcBEwMBIgACEQEDEQH/xAAcAAAABwEB
+
+AAAAAAAAAAAAAAAAAQIDBAUGBwj/xABGEAACAQIEAwUFBQUFBQkAAAABAhEAAwQSITEF
+
+QVEGEyJhcTKBkaGxI0JSwfAHFGLR4RUzcoKSJFOi0vEWQ0Rkc4OTsuL/xAAaAQACAwEB
+
+AAAAAAAAAAAAAAAAAQIDBAUG/8QAMBEAAgIBAwIEBQMEAwAAAAAAAAECEQMEEiExQQUT
+
+UWEiMnGBkRSxwSNS4fAGQqH/2gAMAwEAAhEDEQA/AOnqtOqBTSrSwhoEOCjpGXzo4oAc
+
+igRSBSqABRzQAoytABTSpostU3arjyYO0XOrHRR1NJulZKEXJqK6ljjuJWrK5rjhR5ms
+
+vjf2j2FMIrP9K5dxTi93FOXuMTJ0HIe6kAaVmlnfY7mHwqKV5HydMs/tLtk
+
++K0wFaLhPavDX9FcBuh0NcVVaUZGoMHlUVnkupLJ4Zia+Hg9BZ6Geuadi
+
++2RDCxiDIOiufoa6VWqM1JWji58E8MtsgFqIPRRRZakUjgelZqaC0MtADtHFMwaUDQAp
+
+hSaGahNAAoqVNDNQAjWhNKJoooAGegXoiKKgA89HmpBoTTAXNHTc0JpAOUVJzUKAIamn
+
+FNIUilqaYhQNKpNKFFBYJo6FCgAwaE0VHQOw81cT7c8TbFYpgNVQ5VA6867Ljni256Kf
+
+pXE
+
++EXUTEq76jOSZ8ydaz530R1PDIq5TrldCHc4TdtgFkZQdjFTl4TeI/u2+FXnH8RfRXmL
+
+lq4fC34OlPcO4jdOCuPnOZWAB6DSs
+
++1WdT9RkcFKl1ozWFwVxyVVCSN45ULmFbNkynN051oLOIa1gzcUw9y5q3On7r57mDv8A
+
+3m0bzpbUD1Ek3a45X3Rj8dgLqDMyMI5xtXWv2eca/ecMAx8dvwn8jWbfv
+
++8vC9/cZWiY91Q/2R4mMRdTkyz8D/KrcXwyMeqfnYW2lcaf5OsRSCKUaKtZwwpoZqWBQ
+
+IoARmo5oiKGWgASKE0MlCKABpRaUYWgVoAFGKTFDKaAFzSTSSDRSaBWLiiIpOtEWphYv
+
+LSStJ7yjDUAFloUqioEQlJpwNSQvlSslMBWegLlIC0rLQArvqPvaR+tqLN
+
++op0A4LlH3lN5qPNQAd8ZkZeoI
+
++VcXweAVsSbNw5RmYT5zpXaVeua9vuEm1e79R4X3PRqzaiPFnT8NyVJwur6B4bAXLGHx
+
+C3j4IOSTz5RULhFz/YcQOhH5VRYnHOwhnYjoTUE4hgCASAdxOhrLuOzHTyadvltP8Gsw
+
+E4jBtZSO8R8wBO4p3F3e6bBWCRmVpby/U1i7V90MqxU9QYonusTmLEt1nX40JknpW5Pn
+
+jl/dlt2px9037tvO2TN7M6RAq//AGQ4cnEXH5KkfE1hrjkmSSSeZ1NdY7GYdeH4FsReB
+
+lyCQN4JCqNfWasxcysz69xw6bZ3fBe9se0QwVkMAC7tlUE
+
++UliNyNI94rO4L9pgzResZVMCVaSOpg7jbT1rF9se0D4vEZkJNvQW1j2dBm06ltdPKqM
+
+YJ8+QqcwLCADJIOvu0mrpSd8HnEjvmC7SYe9e7m2+Y5cwYaoeoDDmJFXNefOG271i6rK
+
+4tsAXktlykE+Ej8RgiPOum4zthbuYNmS6LV5kgBpBBkA7TEzp6+VSjP1A0X/aCx+8fu
+
++b7T00mNp61I4rxW1h0D3WgE5RAkk9AK4RguJOl1bxaSpDSTBmfnR43H3bzFldn8RJLG
+
+cozTJE6axUPNHR39r6hc5YZYnNIyxEzO0USsCARqDqCNq4Xx/tLcu27NtnY5EytJ8LQZ
+
+VoB1MQDPSr/sz+0IWLKWrlrMF0BViTHoelSWVWKmdXzCkhqyD9tsOxUZiEYA
+
++GMx2kEmIiSPDJ03FW/ZrH2rlgG2wIVnU8oOdjGvOCDVikn0EXcUKbW4DsRR0wF0WWkz
+
+QJoAOKSaBY02aBNhkCiBApJWigUxC84oUiaFADCsf1NKzH9f8ASiVPOnFAoARm9PjRh/
+
+1NOhBXDe13bTiNrGYizbxLKtu64UC3a0UGV1KSdCNadgdwD
+
++VCfKvN1ztnj2/8XfA/xx81AqFd47im9rFYg/8AvXP
+
++alY9p6fPmIpD3kHtED1IH1NeWL2LuMPFcdvV2P1NO38t0Ndc2lcMq92qZSwyxnAAyge
+
+HXXc1FyoahZ6kRgQCNQdQRqDTPEMDbvW2tuJUj4edVnYVw3DsGf8Ay9of6UC/lV5FS6i
+
+Tado412o7MXcKSQC1vkwG3rWXNyvRr2gwhhIPI1m
+
++J9hMHeM5MhPNTHyrNLB/advTeLJKsq
+
++5xm7fkAdKbJ5DeumL2Cwuud2GUkDUCdTuapMbgLGGZctxXAIN1bYy3FQ7HPcIEzGmhM
+
+iKr8mRpl4thS4socBhFtEXL4OmoSNZiRm6T
+
++daPjPbh7+DKTbUnKCArAsBuBmkQIBmRvFY66Wv3LjquUGJADFRpAnUwSZ950pl8HCAh
+
+wZGomCJJ
+
++6eUAGR1FTS29DjanUS1Et0i37P8RsKPtZYSRlA1EjVtR6D3VEv4653hdNBMqCZI8UjU
+
+8/5TVagC7ka89fkKk8NRc/iKmQ0asPFEjUbfSnbooon28HcZWcHfUSba5iTB1JERqdai
+
+28M5bLK5guaBdBOmpaUDARUa9iDaVSq5iQwPhJO++g1pwX7j384JJQKoA
+
++6mQkgDyzP8aHiaV2RWS
+
++KJFzhrnLDCTOYGTz0ynLrpv50h8G1tkUlfGs7kQJOskeUeulTLd1pGYmDOk/rmDTHFr
+
+jLDK5BKukjfL4WK
+
++hzmltfVjUuaITW84Azbbb/AE9KXh1a40KpJiSANgOfupPCboS8jNb70EnwTo06ASOpN
+
+WiWVw15TdO9yWdWOVI1Cg7uZgt5bbEmrJLavcthG37B8DtFrqo6zBMzGkA7/CneKoe8K
+
+jNkUkhdRE8wAY99S+P4eyjA2TDONcp0yHUGOW0Dy8oqFbcwATtt5f0qmEnP410L3FR
+
++FjWY7yR6Ej6HSktdbbM0b
+
++031mpt3DZxI3G4H1FQrtphvtVhE2PZft/3T27GJclIC94xk2z93MTqy9SdtK22J7UYa
+
+3d7t7gUnZjGRokEZhsRHOJ5TXnoAs5Y9dPSruxFwBdM40U8usHp6/1q
+
++E3FJFM4bnZ26z2hw9xgtu6rkiRlkjeNTEA
+
++RqxFzyrhL4xrbq1uUyhVIBhiwUKdwIEg6fxGuq4DtAluzYOKuKr3vZjXSAZYr4QBO
+
++2oq
+
++M76lDVGhLeVINJsXVuKHRgykSGUyCCJEEVTca7UWMMwtmXuaSqQSs7TJAFTtIRdTQrK
+
+Ht5hgSClzQkfdOxInQ
+
++VClvj6hTNKrU4GqAtyli/U6I2Tg1ef8A9paWxxDEgC53xuq0yO77tsPbMAe1mzE
+
++UV3Zb1cr7f8AYzGYrHPew9qUZbfizoviVAp0LTyHKouJKMuTnJxNrNbIsnIoXOhc/aM
+
+Pb8YEqG+VJTEqDc
+
++xUh1YKCzfZEmVZSPaKjTXfnWnb9nONFxLRW0juCRmuEgxMnMqmNtvOtn2T/Y
+
++ol8c4bolpmy+pYqCarpF1s5D
+
++8fZ93kT282ePH7MZZ/DzjrTuFOjXe8tq9o2yqEHNcOb7o1BiJMxpXdeL/skwLoRaDWn
+
+jQhiRPmCdazSfspVgovYnKba5TksKpbUmWbOc51iSJ20o9kF92bL9muMN3huHcxP2gMA
+
+ASL1waAaAeVN8Z7Zi2blu1admTw5jooaYjqdvfpVl2U4GMFhUsKxfLmbxRMuxcjQbSTX
+
+I+KcWxDXLjux1YgrMgFTtHl
+
++VOb2oqXLLzgvavEYd1DOWtjVwRm9ozoeTGtj2Y7Y/vVw2nt92SDkIJYNEkjbQxr7jWT
+
+XEhsEkBA4KLlYglJLS5WAY3I1PtVCt2kzCyyuLguavMgqQNVUxOkT5TVabXcfDOmpbJY
+
+gKrQ8nNOg1BKkc9fmayXHsHaxJuJawqi5ZYBRlUZiHU6sSBBGkEHQz0rRYTGW7AAZpBh
+
+Qw1Gg3J6VcrZQSQFlucDXofOrIuMrSfImmuTgvECLl8IgW0oYgmSqKZEltBBEzr1qrxF
+
+kg7zMecn
+
++dbPt3gRbOIIvB3LgRkgqG8RGaddzprAHpWewyjDMLoaXAFxddl84kCZ5Gqsia6E4ckV
+
+eCYkrJsOB+JlKL/qeBU/BcFIKktbHiAjvAxkiNMmYc+dVd7thba813umDN
+
++IqyiRGxHvq
+
++x2JJC3R4nWCJJjTWIETVT37eeH/ACXJKyBe4PfUAhCyw5zLBmYI03+VRuGPcsXCxtMJ
+
+JBzKwge8Vt8DxK2LFvMyqSi5htDQCQRuNZqZhOII65g6wZ
+
++8OpH5VzMniOVRaljtdPQvWjg3xIxeHxAJDksSCQU1Ihhl26xqNNxU/inBO9tIwJQZmJ
+
+zr4wGCADIJ1lTzFH2q4taYBReVY1gmDOwI0J2nlVJZfE3LCo
+
++JXL91kuqNhADZfEdunOtWPJlnDcltv1/gi8UIvnmi74bw9LJlJzfibcb7KNBufOprou
+
+ngQxrqqnX0ispgcAtpn1a85UCD4VUncjUljy5es6BQ4wS0d8I0EJ7KgT96CfgOXuqM8E
+
+pO1Ky2OWKVUXvEBncvzIUQNhE6jnz+VNWrfwG55D1PKqdcddY
+
++FwFGkHUHzJYZj8vdRX0vXdyCOQQ6DzIPOr8cdi2spyTUnaLC7x1LZItrnPUyFB56DVv
+
+l76gXON3GBDBfhSMDw7P4RIOx058p8qfv8IFpxnJZdIZY
+
++XnvT3QUtr6kficdxW99rMCrPhlm4zDKAukydwACS0dNK2nCeB4K3eBWHJyDPcJYI5QM
+
+x0GUZcw0113IANW3a7DXMk21GV0yK7ABmcBnQypGUNqsnmVESRWhQKXMwnECEYi8SbzC
+
+MyQqrEARp4jEzFRlxLrlAGZSPvrmCwIlZkjnttWt4phFCXLtq2ouS1zMTlRUjupCk5ZM
+
+k
+
++gJqmt4d0tqWsoo3JdczXAYAKs3iUDMDEDSD503FIguWa/sT2rtJbe1cGUoDclVCi5oP
+
+ComWbTTQSByrL8Z4qtzE3L3iDPAsoAWYljPtKSOeqyJzxTXF76G0pzOXLMFkhGRYQkOA
+
+PGDm06RHWqyyy5SRIgjxDXKxPyBC1FTtIlPG4SaYqxhrRUSLoOxGRdCNCNaFWmB4zetp
+
+kFq3chnOcqksS7EnXzJoVKiNnTFw7c6cGG86zfC+2tu4AHVkYmNiVjmZ3AjrT
+
++G7a4Uu6sWVU1VyCQ40GgAnc6CNfKtDkinaaNbIFRrnGQhKkGcxUQCdkLyYHkdprOcf7
+
+YqLX+zFw5KwzW/BB5eLY+tZvg/ae62t8hy4zaLlytBUnwrzGkf1p9VY
+
++9HQOIYkm5YYbgsIKtrmA2mJ
+
++NWdrGt0Nc/tdowzeFpe2CSpNwgADXwsoEyRtrrTI7dX9xatAdSzfSsCkllmvp
+
++3+DZGDcEdM71jvoPOq3F4hXM2mQ3FIDagmIPzrkXaD9oOKufZI6qG0JUGYO4BJrSdjr
+
+3dYM9TcEjqCRJEnqd6slkql6i8t02Xl7it4PAut7N1iIUHwsAv3dt65jx3EYhcRdFr92
+
+CqQ3jt2y/iAYliVMmW3rd4jHq5yjlnEsIHjBiCV1+7zPKsrxjg1x7t
+
++4CsOEgZhmOVV5DzED0pRnGuSLi74Le1hx
+
++4LimCG6ttZcDw/3gzAKoAg67RvyrP8U4n3zhsuU5YMaBjLGfmB6Aa1qOF2lXBW7N5lt
+
+u6EgOCTAYGSoXNGo
+
++IqxwvarDgMqXhdyaHJbbMpkb5rZ2Gn/SlOUfUFCT7EDEXgOH2mMnLtGnMRr8KY4H2wu
+
+W7lpHJ7pRlYDWASTm930FW2PxAxNp1YbvAkAxpoxAjSYqN2ZwRsO7wjS3dtAgoFJkgzG
+
+UwDEcxr1pVKe5F7xycKZm+1WNuX3c5g9lWIVlBAIbYa6/rzqn44z3MPazhQ
+
++UWgRGYppGaPIHX
+
++Kr7inBiHuZCkZ1EJoJIaQok6A/QVD4hw28LSO1v7NSJaddBl9mNNYG8+VW+ZbI
+
++Q4qzPf2Fay5fv8AUk7+a8h6U5g75uWijAA2vACSSdRA9DpHup6Cp9kawQeckjn0gx7h
+
+Vbfxi27rgmAzKZEnLAJ5bakbUKW9OhNbXyHjkChSi5izbEdBH69aav37+e1bI7sMRpGu
+
+WdTqNBvR/wBoC5etZHMIFloM5p1MHfan8Y1suD3rv4WWWGVF8JChZAge4UKPPKHJ8cMX
+
+g8Gjk3rgBBJIB9mNdT19PL0qzt4xG0ASPJQI3Gg2O50pnC2pVEWNEJA0IJUCNNjrFNW1
+
+fu2LmYIy6CRJAI05GT8KjKaT2sFFtWWFjHhHy3IKMfa5qdIIY6mFAPrUPtFwxrB722YV
+
+iS0D7287c426z1qDxS7GXrHv0YRvpz25+6n8VjybYzXmIKwylswYERz5xzFNpppoUXap
+
+kWxj2I116H47+8knrVjhsaSP6ddj8NffWdwj6cz0J9f18K0PZzDElrwUsFbL7IZTGpBJ
+
+B11GoqU2opthjxvJLbHqTcNxJVEkDN94EbwQffsKm464rGAIUBTlBJO2Yb/4jVbiLa5r
+
+mmpXOAAAPa1B935U9etHMWOwS0ZnWclsbf5qyfBKaki
+
++WPLBOLH8NjXw7hlYqRzBiZ3ke75Va3O1164pRzmSNQ3ns2YQZ6T/ACqqMG0pXVyzAiO
+
+QyZZ66lvhTYwQKOZg6AaHQScw8thWhZKM8sfK/IfC
+
++0Loly1IObJJkHw2y7hY2jNcXUztEHarbhXHbty4puHNB8KwIBy
+
++1A0zaQD61lLVhUNyCJyyT5AoI
+
++c002JdAWRiGEkEGD/Sie6apMMbjCak1Zuu0fEBcR0u75Q1tvwsCZX0I0rGNiCoIBiRr
+
+0bX+lQ
+
++DY5791BcdmBZQ0mYXOM0DrE0WIOadDuY5QOVRx45Q4ky3UzjOpJUSP3o9T7tqFFhgMo
+
+9/Xr60KsM1Gmu40IoIDt4h4FVnJM8oO/nHM07w7h18qU7u8oZ5BIuKAIIJYKdeW4/por
+
+PDMMu1sz6ufzqyt3QohZA6SdPjVKnJqrNkox/tMs/Z262ndLAO4LSYmJz67H1o7fAb1t
+
+QuQtqT4Y06SWK/qa1H7xP3vnUYY9WLKHkrow10n9cqsUn0socO6RnreBW27ByveureAZ
+
+i4VvxHVRqOo5VicTgnRwt/MikwG5eU10dlUXGuR4mAE
+
++SzH1qPxTD279so33h8Ohrnz1UYZm
+
++3c7eDwzfgTfXqjCvwoW5YS0azvFazA8djCg4eyl
+
++IzKzgNI38OUwfKfSs9gWu2LvdXCSo0U8mHKrvDX0X2VVSd4ET60s2ocZJx57otxeF
+
++bj5dPo0SuA9pGvhYw9m2CWSCvswCxGaOUbRz5VZriWzq47k28m5CrrKlSwiQRqNzTK2
+
+rZwl0WwqNlYiBBzRvPWuP4jibkQWaOkn6V1MGPzY7r4fJw9Qlhm4VyuPY6b2l4pgcim7
+
+cm/avXLlvIzEEXN0YgbDSD5RsTWa4D2htLdueA5rjAhmI8KqsBYHu18qyeAwF/ENFq27
+
+nyBgDqTsB51r
+
++D9h8pzYhxO2VDm5fiBA94J22qyeHHTXXsUxyzu79zWcHUPba/cu5FDwTG3OnbLtd/eL
+
+du4Ie4MrBGaUcnMQo3UA6zTuAwyphbiiSAykZtffpUF3dtCSQNhsAOgA0FUeS2l2NP6l
+
+QbpX6EoPcs5cnjdQ4VjaKSS6kMWcwRAMdI86Y4gt+
+
++rF7ijOJy5hqRBXwrIBlRNRms9ZHvNGmHB/F/qIprTx9WD182ncVb70ZvG4rRVJHh5R4
+
+vRj5flWPx143bkLJLNCjUydgAK6de4Ph2JLpJO8kmfXWkWez1keO3aVMuxHhb/AC
+
++KSfSr4RUehjlJy6g4f2NwttQWVy+UAt3hVc0anLHXWsx2z4V
+
++7BGtDwNOckBvHJg6jQEQPVa1ZwQ2JPqXuE+ntU1d4ZbYQ0MOhZyD5QaKV2G51Rk
+
++z3EMyqM2W4m2m45aDlBirPHYnNqxUAa
+
++EQJ6md/Srax2ewwMmwnx/rTt7hGGiBh0+ZqLhFyuhqTqjCqjYq
+
++tu2J5TqQqjct0Hu3jrUDFYa7Yusl0HN6SGH4lPMV0bD8Mt2xCWsoO
+
++WRPwosRgLTCHTMByaT9as46EbOetiABv
+
++vdWs7HYm7ZRg6kK7BwrAg6jLm165flVthuFYYEEWUBH8GvyqZisErDw6Gd4Meh59P0a
+
+ozbtvwdTRpnjWReZ0LLBW8NezM6ITlMZiwOYjRTBAMz6+dIbh9o3RNpcuQeDx5TlGUfe
+
+mdF5/dqouYY2wVcQym0Y8mjXfmDNTvCLqj7pUyOUg
+
++tURkmviXJpyY3Fvy5cc/irJA4faF4fZKLZU+AG5ueeaZ+cUriHDreVu7tBTB
+
++87EtyMl+VE11e9RQQAVYknkRHSp7YZMrMbglQTGQ6wJ0INS2wpop35U4yfpx9CpXg
+
++HhS2HliBn1veKR4tmgawdKPF8CweRiMMQwUkHNegGJG7R8avuG2Ld1EfOni5MrT061Y
+
+f2QI3X3TUk4pUiDUt1tHLez/DbdzEsVtgBLYLASJZicphSI0nbp51tMJYw1v2bCKf8AM
+
+SNI9ppPz501wnhtpT3xvKpcQyMdwvsxAkb8qtlsWXHhvWv9cfWluiuGSnum21wuWRG7k
+
+72tf/Ub+VCpX9nr/vLf
+
++v8A/NClvh6EdkjD8Nu2sZaOW5dDbMO8fOhO3PUfI1msZw2/hXZ2cXAuoDywdSQNVO39
+
+K3/ZzglmzaIZSuQSGc5MznSTr1gQazA4diAWOLUE3jtmBgRBUQfCACKywU8blL/p6Pr1
+
+NsYwytR7889rr/0ndnscty7ba0Gtq4IKjQZgGHSGjrHwq4TBEXLp7z2oPQ7U3wZ4voqK
+
+qi3EeIZYWZgjlBqwu8QBxTjIIa2CNecx+VXYa2X
+
++PYqy79+2uyv37kK7c1jkKauXTFNj2mpRrgS
+
++Z2e4xpKKoFq2LikHcbVT3bbNfKWwXbTwqCSPcKl4W8ysdYE1Is2cty44JC3QswTBK9R
+
+zrbpMSll2M5/iOonhw
+
++ZFdxeGs3Qrq7C35RnYzvoDA95qownZTDoZKm4ZmX1HuQaR6z61esABIYH6/CkZ67+PG
+
+scdqPF588s03OXcUrQAogKNlEBR6KNBSC1CaEVYUlngT/s97/Kah2gTtNS
+
++Hj7G8PIVWCRzqKJSLAALupb40h8R/CQP11FQzdb8R
+
++NAXT1NOiJNuWUyKxYSxPhBkgDm3IT03piBykfr3U7xDCXLJXMZDqGVlJKsD0OlRe8PU
+
+/GnQDnczsfr+VLtWWHIn9edR
+
++8PU0nMetKgLAq34X/0/wAqauWjzBHqsfU1G749TSlvmih2Laz6fFf50WQ9f+L
+
++RpJu0A45j4QPyooQMvn86AA6/WpKG0eTA/4h
+
++dLbBDcPHrlP0NFDsbTEKbZtOAbZYMQAA2hkRcKErrTlzBWrt5O5YqIOYXWRdTsFYCD7
+
+wN6ZOHM6OnxIozhbnQH0INRlBMnHJKPT/bEcR4ebV62txSshtwPFt7J2b3U49kZWyg6g
+
+jby9aOy72zOTXbVFYR6FT1NSL/EkZSGw9tWjRkLJr1KQQfdFQ8ur9yby3t9iLwNmNlIm
+
+NdmjmeRq5t3Mv/esPeG+hqt4Vg7YthRiEzD8aOg6+2Mw
+
++MVPbhN6JVe8XraYXB/wSahGDUUmSyZFKbku7IPZjElbTrn2uNuoadtdate
+
++U7taPrZX+VZrhDQ11dvtD16mrTMRz
+
++NV48fw8lmon/Ue3/eCdCfhs/8Awr/y0KhBqFT8qPoVeZL1DyC/ie4JPdd3nYbEsG013
+
+imu0GASWDZot+yB/EBGvPlUHC4792xDXWQsWXKNVB8J8idNaHF+Lm
+
++4ZQUEQRmmSOew6x7qyZssIwkn1O5odHly5MbXyL9+5UpbXuwWkXFvJpETbIJYyd9Quk
+
+aa9dLjtDYW3jF7olrbKChmSQQefWZ+FVHErhyoZJ1O+vIVo7XD7NuxZvvcuPfuCbYD
+
++FBtroTptE76cjT07co19GR18FiyW33af3K1k5+6gDT13CsGjr8NatMLwIH27ken865z
+
+02TJL4Y0diGvwYcaU8llCvD5YtpBqwbB/ZF
+
++hAo8RaKuUQkqPvCD8elIuqypqd/1tWrDGOPIltbkvwYdXknmwye+Ki
+
++V6shxQiNqANHFds8mJLGkzS6KKALThP8Ad3h/BVZtVhwXa6OqGq0E
+
++dRXUlLsKDUKTBpYQdRPTX
+
++VSIgAFFlo2Ujekh6ADy0VHNSsHhBcn7VEPIPIB/zQQPfFAEKgam4vh120JdCF5MIZD6
+
+OJB+NRIoARmo89GUostAAz0JoqBFIYqaWlwjkPeAaZBo6diJYxpj2E+BH/ANSKR
+
++9t1j4/mTUeaORQA8MR1APqBS7bgnQAHrmK/OajGKEUDLfBXntjKqW2X8JWzcHzE/On/
+
+wB8w7aXcOUPW0zJ/wADZl
+
++lUEeVAUqA0HcYL/f3h5G2CfiDrQqgzevxoUUFie1F4teuBIOQ+E8jmylp
+
++dN8Iwb3WK+EQAd/LXl1p3BdnMQ3iCrlP8Q2PlVh2ftZLsa7Hp
+
++QFclYZZJXJcHq8usx6XGoYpW0uPT7hYrgahId4bMCoG5BDBtDvHh+NQeIW
+
++6ttG6rodAdBptWr4mVCGQMxKhTGo1JMHlpWc40s27g/gOvurdixRh0R5/UanJmbc37m
+
+F/7bYkDxZWOkEiCI2qrx3aTFXvbvNHQGB8qrL002prZtSfQy7nRq
+
++AdsmwtpreQvmOaSauOGdqLmMuwUCqBOkk1zwk1rv2fZe8dmEgLUcm2KcieGEss1jXfg
+
+180YNKxDgt4RpTdQhJSimgzYnim4PqhYNHTdDNUiotOCnxOOqNVfU3gjfaH/C30qDNJd
+
+WN9A4oZaE0KYgstFlpc0VACaNddKOKIrRQyVhsbesHwM6TuPun1U6H4UzevFyWMSeiqo
+
++CgCkK7DY6fL4UoXZ3Ue7Q/LSkAmKFKzDqR6ifmKSH9PeB9TtQAVAilpl1zE
+
++UAH4yRSSaLAQRSSvrTkUIoAb1ojTlERQAjP5UYajiiZRQAc0JpOWhJoAVmoVGfGqDBI
+
+mhQB0PhOlselZ5rXdYozopJIPKDrv8AKmMD2yULHck/5h/KpuKx1vF4O45SGttpzImNZ
+
+j1+FYnmjtdPk636DLvTyKk2l
+
++RrtJjB3RKMCykHr8qoExDXbDljrBHIcp2pl7fgaB90nQdNSfSlcJgqQef8qq0+oeSaZ
+
+o8Q0ENNjaXL4OaXKjEVoOLcNFu445AmPftUG1ZCsDuAZrrXaOEokPChiTlExqdJgV0Ls
+
+5bsJZzKhzOPEZ51T3MbaCEIoBuCNOU9ateAqBaAHIkVztbkm8Nrjk73gmLH
+
++p2yp8X9C8t4pIju/fzpkGkWzS4qvw6bkmmWf8ixRhODiut2HNEaFFXSPOFlwJAboB6H
+
+6VBfQn1NTOBH7Zff9KhYjRm/xH60u4BhqOaamlCmA4DQJpBNKBoAOaE0DRRQAqaE0k0J
+
+oEA0CKOaBNFDE+
+
++jk0cURWkApASY5nlUi/w67bGZ0ZR5x8xyqKCfSl9+34j8aACt2ydtf150VPYS7bBOdC
+
+/TxEe/TWn8YLXtA5B01PzY0AQSKBFQsVxmynOTUDEdpgASLZiigLsioHF8atpP4joB9K
+
+cw3E1a13nI1VcGAxOKlzomwoAn4Tsg1xA7sczCTrQroS3EAAkaUKfBHk5JhbTaDMdiT8
+
+dvhWo7LYkpbv2yT9pb566gUKFcjdy0ewzY1tT+n8CMK2/mjj422pjgp8J91ChVei
+
++ZB438r+i/cqe1mGhlYfe0+FZS+/iyj30dCu9j+U8oOWokVr
+
++ArNvfmaFCsviC/oHX8Edam/YtrdmlUKFZdBFRujR49kc3G
+
++1gomFChXRPOErg2l9PWmMYPtH/AMR
+
++tChS7j7DVA0KFMAwaOhQpAAPSw1ChTQAmgSKFChgEaSTQoUCAXpU0KFAwCgTQoUAIus
+
+QpPSsu+Oa8xBOgoqFCE+gzcUU1iD4SPKhQqRATgcQe5M
+
++yu1SODYdsucHVvOioVh1knGHB2fC8cZZHZKvXr0nx/M0KFCsiyyo6LwY76H/2Q==" 
+
+alt="Cinque Terre" width="600" height="500">
+
+</div>
+
+<div class="gallery">
+    <img src="https://www.workforce.com.au/wp-
+
+content/uploads/2014/12/victoria-Road-Traffic-Control-1366x556.jpg" 
+
+width="600" height="500">
+ </div>
+
+<div class="gallery">
+   <img src="https://www.workforce.com.au/wp-
+
+content/uploads/2015/04/Traffic-Safety-Initiatives-Workforce-TMA-
+
+truck-1366x556.jpg" width="600" height="500">
+</div>
+
+<div class="gallery">
+  <img src="http://res.cloudinary.com/www-ascend-com-
+
+au/image/upload/w_503,h_404,g_face,c_fill,e_saturation:50/v148896681
+
+1/ascend/e0ebad08-b77b-43dc-a91c-e95ae91dc5be.jpg" alt="Mountains" 
+
+width="600" height="500">
+</div>
+
+</div>
+
+
+<div style="background-color:#e5e5e5;text-
+
+align:center;padding:10px;margin-top:7px;">CONTACT DETAILS</div>
+</body>
+
+</html>

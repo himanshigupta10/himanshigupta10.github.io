@@ -8,6 +8,11 @@
 scale:1.0">
 
 <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
 <style>
 
@@ -320,7 +325,7 @@ height="105px" width="160px">
   <li class="dropdown">
     <a href="#" class="dropbtn">Traffic Issues</a>
     <div class="dropdown-content">
-      <a href="file:///C:/Users/HP/Documents/accproject.html">Accident</a>
+      <a href="file:///C:/Users/HP/Documents/Trafficmanagement/accproject.html">Accident</a>
       <a href="#">Four-wheelers</a>
       <a href="#">Traffic-signals</a>
       <a href="#">Road work</a>
@@ -925,8 +930,21 @@ width="600" height="500">
 </div>
 
 </div>
+<div class="jumbtron">
+<div class="row">
+<div class="col-sm-4">
+<p>Traffic jam is a very hot issue nowadays. Traffic management plays a crucial role in our life. it will resolve many day to day life problems</p>
+</div>
 
+<div class="col-sm-4">
+<p>Traffic jam is a very hot issue nowadays. Traffic management plays a crucial role in our life. it will resolve many day to day life problems</p>
+</div>
 
+<div class="col-sm-4">
+<p>Traffic jam is a very hot issue nowadays. Traffic management plays a crucial role in our life. it will resolve many day to day life problems</p>
+</div>
+</div>
+</div>
 <div style="background-color:#e5e5e5;text-
 
 align:center;padding:10px;margin-top:7px;">CONTACT DETAILS</div>

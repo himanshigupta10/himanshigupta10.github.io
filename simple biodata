@@ -1,0 +1,60 @@
+<form  target="_blank">
+<fieldset>
+<legend text-color="red">PERSONAL INFORMATION</legend>
+FIRSTNAME:<br>
+<input type="text" name="firstname" value="himanshi" required readonly><br>
+LASTNAME:<br>
+<input type="text" name="lastname" placeholder="LAstname"  required><br>
+email:<br>
+<input type="email" name="email" ><br>
+CITY:<br>
+<select name="city" size="2" multiple>
+<option value="delhi">delhi</option>
+<option value="bareilly" selected>bareilly</option>
+<option value="gzb">gzb</option>
+</select>
+<br>
+GENDER:<br>
+<input type="radio" name="gender" value="male">MALE<br>
+<input type="radio" name="gender" value="female">FEMALE<br>
+<br>
+COURSE:<br>
+<input list="course" name="course">
+<datalist id="course">
+<option value="btech">
+<option value="mba">
+<option value="bpharma">
+</datalist>
+</input>
+<br>
+age:<br>
+<input type="number" min="6" max="17" step="3">
+<br><br>
+USERPASSWORD:<br>
+<input type="password" name="psw">
+<br><br>
+intrestfield:<br>
+<input type="checkbox" name="intrest1" value="cs">CS<br>
+<input type="checkbox" name="intrest2" value="it">IT<br>
+<input type="checkbox" name="intrest3" value="civil">CIVIL><br>
+<br>
+<br>
+<button type="button" onclick="alert('hello world')">click me</button>
+<br>
+fav color:<br>
+<input type="color" name="favcolor">
+<br>
+BOD:<br>
+<input type="date" name="bday" min="1997-12-03" max="2018-12-03">
+<br>
+contact:<br>
+<input type="tel" name="telephone"><br>
+<br>
+<textarea name="message" rows="10" cols="30">I hereby declared mentioned informATION IS correct.</textarea>
+
+ 
+<br>
+
+<input type="reset">
+</fieldset>
+</form>
